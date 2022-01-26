@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* body of calculator */
+.body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-rows: repeat(6, 60px);
+  grid-template-columns: repeat(4, 80px);
+  border: 3px solid black;
+  border-radius: 20px;
+  background: #263d42;
+  box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.52);
+}
+
+/* display text field */
+#display {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: right;
+  padding: 15px;
+  outline: none;
+  border-bottom: 3px solid black;
+  border-radius: 20px;
+  background: #c7dfc5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* buttons */
+.btn {
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  background: whitesmoke;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+}
+#btn1 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+#btn2 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+#btn3 {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+#btnAdd {
+  grid-row: 2/3;
+  grid-column: 4/5;
+  background: #008dd5;
+}
+#btn4 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+#btn5 {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+#btn6 {
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+#btnSub {
+  grid-row: 3/4;
+  grid-column: 4/5;
+  background: #f18f01;
+}
+#btn7 {
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+#btn8 {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+#btn9 {
+  grid-row: 4/5;
+  grid-column: 3/4;
+}
+#btnMul {
+  grid-row: 4/5;
+  grid-column: 4/5;
+  background: #644536;
+}
+#btnOpenBracket {
+  grid-row: 5/6;
+  grid-column: 1/2;
+}
+#btn0 {
+  grid-row: 5/6;
+  grid-column: 2/3;
+}
+#btnCloseBracket {
+  grid-row: 5/6;
+  grid-column: 3/4;
+}
+#btnModulo {
+  grid-row: 5/6;
+  grid-column: 4/5;
+  background: #60935d;
+}
+#btnClearAll {
+  grid-row: 6/7;
+  grid-column: 1/2;
+  background: #e55934;
+}
+#btnClear {
+  grid-row: 6/7;
+  grid-column: 2/3;
+  background: #d9594c;
+}
+#btnDecimal {
+  grid-row: 6/7;
+  grid-column: 3/4;
+  background: #aa968a;
+}
+#btnEqual {
+  grid-row: 6/7;
+  grid-column: 4/5;
+  background: #edb6a3;
+}
+.btn:active {
+  color: whitesmoke;
+  background: black;
+}
